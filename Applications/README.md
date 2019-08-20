@@ -9,7 +9,7 @@ Here, we provide the code for several image translations problems described in o
   * opencv-python==4.1.0.25
   * imageio==2.5.0
 
-##Dataset Preparations
+## Dataset Preparations
 ### General Image Translations
 The trainer/predictor expects for the 'data' input argument a directory path containing the sub-directories:
 * train
