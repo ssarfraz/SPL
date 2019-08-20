@@ -19,7 +19,7 @@ Available material to out paper can be found here:
 | :--- | :----------
 | [SPL](https://github.com/ssarfraz/SPL) | Main folder.
 | &boxvr;&nbsp;[SPL_Loss](https://github.com/ssarfraz/SPL/tree/master/SPL_Loss) | Contains the proposed loss formulation for both Tensorflow and Pytorch
-| &boxvr;&nbsp;[FCC_Dataset](https://github.com/ssarfraz/SPL/tree/master/FCC_Dataset) | Contains scripts for recreating the FCC dataset and data preparations for training/testing
+| &boxvr;&nbsp;[FCC_Dataset](https://github.com/ssarfraz/SPL/tree/master/FCC_dataset) | Contains scripts for recreating the FCC dataset and data preparations for training/testing
 | &boxvr;&nbsp;[Applications](https://github.com/ssarfraz/SPL/tree/master/Applications) | Contains Tensorflow implementation for image-to-image translation, single image Super Resolution and Makeup Transfer as described in our paper
 | [Supplimentary](https://drive.google.com/file/d/1lkxO6lkzSClnGac2jcWuuBllMsAenETp/view?usp=sharing) | associated supplimentary notes (85.6 MB)
 
