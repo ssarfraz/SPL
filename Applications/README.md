@@ -33,7 +33,7 @@ The trainer/predictor expects for the 'data' input argument a directory path con
 The names of an image in lower resolution should correspond to the same image in higher resolution.    
 
 ### Makeup Transfer 
-Similar to general image translations. Further explained [here](https://github.com/ssarfraz/SPL/FCC_Dataset).
+Similar to general image translations. Further explained [here](https://github.com/ssarfraz/SPL/tree/master/FCC_dataset).
 
 ## Training
 ```bash
