@@ -1,5 +1,5 @@
 # Applications
-Here, we provide the code for several image translations problems described in our paper. The used architectures are based on the common ResNet-9block encoder-decoder and SRCNN. For training, these models apply SPL for output and fitting secondary input based on the application. The project is build upon Tensorflow estimators.
+Here, we provide the code for several image translation problems described in our paper. The used architectures are based on the common ResNet-9block encoder-decoder and SRCNN. For training, these models apply SPL for output and fitting secondary input based on the application. The project is build upon Tensorflow estimators.
 ## Dependencies
 * Python3 
   * tensorflow==1.12.0
