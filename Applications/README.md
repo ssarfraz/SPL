@@ -35,16 +35,16 @@ The names of an image in lower resolution should correspond to the same image in
 ### Makeup Transfer 
 Similar to general image translations. Further explained [here](https://github.com/ssarfraz/SPL/FCC_Dataset).
 
-##Training
+## Training
 ```bash
 python3 trainer.py --output <output directory> --dataset-name <type of dataset for corresponding application: [makeup,hilo,img_trans]> --data <data directory> --model <type of model: [hires,img_translation, makeup]> --batch-size <quite self explanatory>
 ```
-##Testing
+## Testing
 ```bash
  python3 predictor.py --model-dir <path of model to load (output directory used in train)> --dataset-name <type of dataset to load> --data <path of data to load> --batch-size <batch size> --model <type of model to use> --result_dir <directory in which results are to be stored>
 ```
 
-##Tensorboard
+## Tensorboard
 ```bash
 python3 -m tensorboard.main --port [specify] --logdir [model directory]
 ```
