@@ -13,7 +13,7 @@ The repository contains the code and the new make-up dataset (Facial Cosmetic Co
 
 ## Contents
 
-Available material to out paper can be found here:
+Available material to our paper can be found here:
 
 | Path | Description
 | :--- | :----------
