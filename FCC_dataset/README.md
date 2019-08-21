@@ -25,7 +25,7 @@ Because of the copyright issues, instead of sharing images we provide a script f
 ## FCC Subsets
 
 The FCC dataset consists of subsets containing Any-,Strong- and No-Makeup-Images in high and low resolution. 
- Due to the nature of various makeup tutorials, it includes before-and-after images of different subjects, which can be used to study face recognition under the appliance of makeup.
+ Due to the nature of various makeup tutorials, it includes before-and-after images of different subjects, which **can also be used to study face recognition under the appliance of makeup**.
  We do not provide the explicit before-after image matchings between persons, however, they can be recovered based on matching image names as each image is named after the video url it stems from.
  
 | Dataset   |   Images| 
