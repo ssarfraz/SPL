@@ -3,7 +3,7 @@
 
 Spatial Profile Loss (SPL) is a novel pixel level loss to directly train single generators. The SPL loss can be seen as an effective replacement of the standard L1 loss on the generator. To motivate this, we have naturally trained standard generator networks without adversarial (discriminators) or perceptual networks/losses on different image translation problems.
 
-The repository contains the code and the new make-up dataset (Facial Cosmetic Content (FCC)) described in our BMVC 2019 oral paper **Content and Colour Distillation for Learning Image Translations with the Spatial Profile Loss**. [https://arxiv.org/abs/1908.00274](https://arxiv.org/pdf/1908.00274.pdf) 
+The repository contains the code and the new make-up dataset (Facial Cosmetic Content (FCC)) described in our BMVC 2019 oral paper **Content and Colour Distillation for Learning Image Translations with the Spatial Profile Loss**. [https://arxiv.org/abs/1908.00274](https://arxiv.org/pdf/1908.00274.pdf) **Best Industry Paper award at BMVC 2019**
 
 > [**Content and Colour Distillation for Learning Image Translations with the Spatial Profile Loss.**](https://arxiv.org/pdf/1908.00274.pdf)<br>
 > M. Saquib Sarfraz, Constantin Seibold, Haroon Khalid, Rainer Stiefelhagen<br>
