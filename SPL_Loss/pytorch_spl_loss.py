@@ -25,9 +25,10 @@ class GPLoss(nn.Module):
         return f_v, f_h
 
     def __call__(self, input, reference):
-        ## Uncomment these lines when reading a [-1,1] input, but you want to compute the loss over a [0,1] range
-        # input = (input+1)/2
-        # reference = (reference+1)/2
+        ## comment these lines when you inputs and outputs are in [0,1] range already
+        input = (input+1)/2
+        reference = (reference+1)/2
+       
         input_v,input_h = self.get_image_gradients(input)
         ref_v, ref_h = self.get_image_gradients(reference)
 
@@ -56,18 +57,15 @@ class CPLoss(nn.Module):
         return f_v, f_h
 
     def to_YUV(self,input):
-        ## Comment the following line if you already apply the value adjustment in __call__()
-        #  We rerange the inputs to [0,1] here in order to convert to YUV
-        input = (input+1)/2
         return torch.cat((0.299*input[:,0,:,:].unsqueeze(1)+0.587*input[:,1,:,:].unsqueeze(1)+0.114*input[:,2,:,:].unsqueeze(1),\
          0.493*(input[:,2,:,:].unsqueeze(1)-(0.299*input[:,0,:,:].unsqueeze(1)+0.587*input[:,1,:,:].unsqueeze(1)+0.114*input[:,2,:,:].unsqueeze(1))),\
          0.877*(input[:,0,:,:].unsqueeze(1)-(0.299*input[:,0,:,:].unsqueeze(1)+0.587*input[:,1,:,:].unsqueeze(1)+0.114*input[:,2,:,:].unsqueeze(1)))),dim=1)
 
 
     def __call__(self, input, reference):
-        ## Uncomment these lines when reading a [-1,1] input, but you want to compute the loss over a [0,1] range
-        # input = (input+1)/2
-        # reference = (reference+1)/2
+        ## comment these lines when you inputs and outputs are in [0,1] range already
+        input = (input+1)/2
+        reference = (reference+1)/2
         total_loss= 0
         if self.rgb:
             total_loss += self.trace(input,reference)
@@ -105,9 +103,9 @@ class SPL_ComputeWithTrace(nn.Module):
 
 
 class SPLoss(nn.Module):
-    def __init__(self,weight = [1.,1.,1.]):
+    def __init__(self):
         super(SPLoss, self).__init__()
-        self.weight = weight
+        
 
     def __call__(self, input, reference):
         a = torch.sum(torch.sum(F.normalize(input, p=2, dim=2) * F.normalize(reference, p=2, dim=2),dim=2, keepdim=True))
