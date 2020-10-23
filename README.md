@@ -29,7 +29,7 @@ Available material to our paper can be found here:
 If you use this work or dataset, please cite:
 ```latex
 @inproceedings{spl,
-    author    = {M. Saquib Sarfraz, Constantin Seibold , Haroon Khalid and Rainer Stiefelhagen}, 
+    author    = {Sarfraz,M. Saquib and   Seibold,Constantin  and  Khalid,Haroon and Stiefelhagen,Rainer}, 
     title     = {Content and Colour Distillation for Learning Image Translations with the Spatial Profile Loss}, 
     booktitle = {Proceedings of the 30th British Machine Vision Conference (BMVC)},
     year  = {2019}
